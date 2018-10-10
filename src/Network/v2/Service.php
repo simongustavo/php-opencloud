@@ -2,7 +2,7 @@
 
 namespace Rackspace\Network\v2;
 
-use OpenCloud\Common\Resource\AbstractResource;
+use OpenStack\Common\Resource\AbstractResource;
 use Rackspace\Network\v2\Models\Network;
 use Rackspace\Network\v2\Models\Port;
 use Rackspace\Network\v2\Models\SecurityGroup;

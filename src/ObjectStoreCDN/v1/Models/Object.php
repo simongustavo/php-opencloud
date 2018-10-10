@@ -2,8 +2,8 @@
 
 namespace Rackspace\ObjectStoreCDN\v1\Models;
 
-use OpenCloud\Common\Resource\AbstractResource;
-use OpenCloud\Common\Resource\Deletable;
+use OpenStack\Common\Resource\AbstractResource;
+use OpenStack\Common\Resource\Deletable;
 
 class Object extends AbstractResource implements Deletable
 {

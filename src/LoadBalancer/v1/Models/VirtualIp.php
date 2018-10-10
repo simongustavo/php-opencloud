@@ -2,10 +2,10 @@
 
 namespace Rackspace\LoadBalancer\v1\Models;
 
-use OpenCloud\Common\Resource\AbstractResource;
-use OpenCloud\Common\Resource\Creatable;
-use OpenCloud\Common\Resource\Deletable;
-use OpenCloud\Common\Resource\Listable;
+use OpenStack\Common\Resource\AbstractResource;
+use OpenStack\Common\Resource\Creatable;
+use OpenStack\Common\Resource\Deletable;
+use OpenStack\Common\Resource\Listable;
 
 /**
  * Represents a VirtualIp resource in the LoadBalancer v1 service

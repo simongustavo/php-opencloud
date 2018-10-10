@@ -2,9 +2,9 @@
 
 namespace Rackspace\Image\v1\Models;
 
-use OpenCloud\Common\Resource\AbstractResource;
-use OpenCloud\Common\Resource\Creatable;
-use OpenCloud\Common\Resource\Deletable;
+use OpenStack\Common\Resource\AbstractResource;
+use OpenStack\Common\Resource\Creatable;
+use OpenStack\Common\Resource\Deletable;
 
 /**
  * Represents a Tag resource in the Image v1 service

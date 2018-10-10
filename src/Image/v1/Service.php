@@ -2,7 +2,7 @@
 
 namespace Rackspace\Image\v1;
 
-use OpenCloud\Common\Resource\AbstractResource;
+use OpenStack\Common\Resource\AbstractResource;
 
 class Service extends AbstractResource
 {

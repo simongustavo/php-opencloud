@@ -2,8 +2,8 @@
 
 namespace Rackspace\LoadBalancer\v1\Models;
 
-use OpenCloud\Common\Resource\AbstractResource;
-use OpenCloud\Common\Resource\Retrievable;
+use OpenStack\Common\Resource\AbstractResource;
+use OpenStack\Common\Resource\Retrievable;
 
 /**
  * Represents a Statistics resource in the LoadBalancer v1 service

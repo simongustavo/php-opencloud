@@ -2,7 +2,7 @@
 
 namespace Rackspace\RackConnect\v3;
 
-use OpenCloud\Common\Api\AbstractParams;
+use OpenStack\Common\Api\AbstractParams;
 
 class Params extends AbstractParams
 {

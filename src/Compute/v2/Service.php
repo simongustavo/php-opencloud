@@ -2,7 +2,7 @@
 
 namespace Rackspace\Compute\v2;
 
-use OpenCloud\Common\Resource\AbstractResource;
+use OpenStack\Common\Resource\AbstractResource;
 use Rackspace\Compute\v2\Models\Image;
 use Rackspace\Compute\v2\Models\Keypair;
 use Rackspace\Compute\v2\Models\Network;

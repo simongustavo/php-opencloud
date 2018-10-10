@@ -2,9 +2,9 @@
 
 namespace Rackspace\CDN\v1\Models;
 
-use OpenCloud\Common\Resource\AbstractResource;
-use OpenCloud\Common\Resource\Creatable;
-use OpenCloud\Common\Resource\Deletable;
+use OpenStack\Common\Resource\AbstractResource;
+use OpenStack\Common\Resource\Creatable;
+use OpenStack\Common\Resource\Deletable;
 
 /**
  * Represents a SslCertificate resource in the CDN v1 service

@@ -2,8 +2,8 @@
 
 namespace Rackspace\DNS\v1\Models;
 
-use OpenCloud\Common\Resource\AbstractResource;
-use OpenCloud\Common\Resource\Listable;
+use OpenStack\Common\Resource\AbstractResource;
+use OpenStack\Common\Resource\Listable;
 
 /**
  * Represents a Subdomain resource in the DNS v1 service

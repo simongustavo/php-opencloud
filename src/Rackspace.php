@@ -3,9 +3,10 @@
 namespace Rackspace;
 
 use GuzzleHttp\Client;
-use OpenCloud\Common\Service\Builder;
-use OpenCloud\Common\Transport\HandlerStack;
-use OpenCloud\Common\Transport\Utils;
+use GuzzleHttp\HandlerStack;
+
+use OpenStack\Common\Service\Builder;
+use OpenStack\Common\Transport\Utils as TransportUtils;
 use Rackspace\Identity\v2\Service;
 
 class Rackspace
@@ -30,7 +31,7 @@ class Rackspace
         }
 
         $options['identityService'] = Service::factory(new Client([
-            'base_uri' => Utils::normalizeUrl($options['authUrl']),
+            'base_uri' => TransportUtils::normalizeUrl($options['authUrl']),
             'handler'  => HandlerStack::create(),
         ]));
 
@@ -40,13 +41,14 @@ class Rackspace
     public function objectStoreV1(array $options = []): \Rackspace\ObjectStore\v1\Service
     {
         $defaults = ['catalogName' => 'cloudFiles', 'catalogType' => 'object-store'];
-        return $this->builder->createService('ObjectStore', 1, array_merge($defaults, $options));
+
+        return $this->builder->createService('ObjectStore\\v1', array_merge($defaults, $options));
     }
 
     public function objectStoreCdnV1(array $options = []): \Rackspace\ObjectStoreCDN\v1\Service
     {
         $defaults = ['catalogName' => 'cloudFilesCDN', 'catalogType' => 'rax:object-cdn'];
-        return $this->builder->createService('ObjectStoreCDN', 1, array_merge($defaults, $options));
+        return $this->builder->createService('ObjectStoreCDN\\v1', array_merge($defaults, $options));
     }
 
     /**
@@ -57,6 +59,6 @@ class Rackspace
     public function computeV2(array $options = []): \Rackspace\Compute\v2\Service
     {
         $defaults = ['catalogName' => 'cloudServersOpenStack', 'catalogType' => 'compute'];
-        return $this->builder->createService('Compute', 2, array_merge($defaults, $options));
+        return $this->builder->createService('Compute\\v2', array_merge($defaults, $options));
     }
 }

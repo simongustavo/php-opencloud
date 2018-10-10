@@ -2,7 +2,7 @@
 
 namespace Rackspace\Network\v2\Models;
 
-use OpenCloud\Common\Resource\AbstractResource;
+use OpenStack\Common\Resource\AbstractResource;
 
 class FloatingIp extends AbstractResource
 {
